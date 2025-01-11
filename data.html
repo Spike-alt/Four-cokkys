@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队介绍</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some default styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Navigation Bar */
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        nav a:hover {
+            color: #1dbf73;
+        }
+        /* Header Section */
+        
+        header {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('background-header.jpg') center/cover no-repeat;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+            background-position: center center;
+            background-size: cover;
+        }
+        
+        header .logo img {
+            max-width: 120px;
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        /* Section with background images */
+        
+        section {
+            margin: 40px auto;
+            max-width: 1000px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background-image: url('background-section.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            color: #2d3a3f;
+            margin-bottom: 20px;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        #team-members ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        #team-members li {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        footer {
+            background-color: #2d3a3f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        footer p {
+            font-size: 0.9rem;
+        }
+        /* Button styles */
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #1dbf73;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #17a66f;
+            transform: translateY(-2px);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                margin: 20px;
+                padding: 15px;
+            }
+            .btn {
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">团队介绍</a>
+        <a href="#">加入我们</a>
+        <a href="#">联系我们</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="team-logo.png" alt="团队Logo" />
+        </div>
+        <h1>我们的团队</h1>
+    </header>
+
+    <!-- Team Name Section -->
+    <section id="team-name">
+        <h2>团队队名</h2>
+        <p>我们的团队名称是：12306</p>
+    </section>
+
+    <!-- Team Leader Section -->
+    <section id="team-leader">
+        <h2>团队队长</h2>
+        <p>队长：郑伺茼</p>
+        <p>简介：郑伺茼是团队的创始人和核心成员，负责整体战略和方向。</p>
+    </section>
+
+    <!-- Team Members Section -->
+    <section id="team-members">
+        <h2>团队队员</h2>
+        <ul>
+            <li>刘厚冬 - 技术负责人</li>
+            <li>秦洋 - 纯混子</li>
+            <div>
+                <img src="qinyang.jpg" alt="秦洋">
+            </div>
+            <li>周冉 - 纯混子</li>
+            <div>
+                <img src="zhouran.jpg" alt="周冉">
+            </div>
+            <li>谭超 - 纯混子</li>
+            <div>
+                <img src="tanchao.jpg" alt="谭超">
+            </div>
+            <li>伍思琪 - 纯混子</li>
+            <div>
+                <img src="wusiqi.jpg" alt="伍思琪">
+            </div>
+        </ul>
+    </section>
+
+    <!-- Team Vision Section -->
+    <section id="team-vision">
+        <h2>团队愿景或口号</h2>
+        <p>我们的愿景是：致力于创新、合作与成长，成为行业领先者！</p>
+        <a href="#" class="btn">加入我们</a>
+    </section>
+
+    <!-- Team Rules Section -->
+    <section id="team-rules">
+        <h2>内部管理规则</h2>
+        <ul>
+            <li>每位成员需按时完成任务。</li>
+            <li>团队内沟通要清晰、及时。</li>
+            <li>每周例会，分享进度与挑战。</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 超级团队 版权所有</p>
+    </footer>
+
+</body>
+
+</html>
